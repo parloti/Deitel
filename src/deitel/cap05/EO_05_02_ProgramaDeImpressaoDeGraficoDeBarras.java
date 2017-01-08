@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Alex
+ * Copyright (C) 2016 Alex
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,28 +16,34 @@
  */
 package deitel.cap05;
 
-import java.util.Scanner;
+import java.awt.Graphics;
+import javax.swing.JPanel;
 
 /**
  *
  * @author Alex
  */
-public class Ex_05_16_ProgramaDeImpressaoDeGraficoDeBarras {
+public class EO_05_02_ProgramaDeImpressaoDeGraficoDeBarras extends JPanel {
 
-	public static void main(String args[]) {
-		Scanner input = new Scanner(System.in);
-		int numero, numero1, numero2, numero3, numero4, numero5;
+	private int numero;
+	private final int numero1;
+	private final int numero2;
+	private final int numero3;
+	private final int numero4;
+	private final int numero5;
+	private final int rectWidth = 30;
 
-		System.out.println("Insira o primeiro inteiro.");
-		numero1 = input.nextInt();
-		System.out.println("Insira o segundo inteiro.");
-		numero2 = input.nextInt();
-		System.out.println("Insira o terceiro inteiro.");
-		numero3 = input.nextInt();
-		System.out.println("Insira o quarto inteiro.");
-		numero4 = input.nextInt();
-		System.out.println("Insira o quinto inteiro.");
-		numero5 = input.nextInt();
+	public EO_05_02_ProgramaDeImpressaoDeGraficoDeBarras(int numero1, int numero2, int numero3, int numero4, int numero5) {
+		this.numero1 = numero1;
+		this.numero2 = numero2;
+		this.numero3 = numero3;
+		this.numero4 = numero4;
+		this.numero5 = numero5;
+	}
+
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
 
 		for (int i = 1; i <= 5; i++) {
 			switch (i) {
@@ -64,10 +70,9 @@ public class Ex_05_16_ProgramaDeImpressaoDeGraficoDeBarras {
 			}
 			int j = 0;
 			do {
-				System.out.print("*");
+				g.drawRect(50, i * rectWidth, 5*numero, rectWidth);
 				j++;
 			} while (j < numero);
-			System.out.println();
 		}
 	}
 }
