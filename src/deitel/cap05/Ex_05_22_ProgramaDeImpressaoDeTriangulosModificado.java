@@ -20,18 +20,21 @@ package deitel.cap05;
  *
  * @author Alex
  */
-public class Ex_05_18_ProgramaDeJurosCompostosModificado {
+public class Ex_05_22_ProgramaDeImpressaoDeTriangulosModificado {
 
 	public static void main(String args[]) {
-		int amount;
-		int principal = 100000;
-		double rate = 0.05;
-
-		System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-		for (int year = 1; year <= 10; year++) {
-			amount =(int) ( principal * Math.pow(1 + rate, year));
-			System.out.printf("%4d%,20d.%02d%n", year, amount/100,amount%100);
+		for (int j = 0; j < 10; j++) {
+			for (int k = 0; k < 40; k++) {
+				if (k < 10 && k <= j
+						|| k >= 10 && k <= 19 - j
+						|| k < 30 && k >= 20 + j
+						|| k >= 30 && k >= 39 - j) {
+					System.out.print('*');
+				} else {
+					System.out.print(' ');
+				}
+			}
+			System.out.println();
 		}
 	}
 }

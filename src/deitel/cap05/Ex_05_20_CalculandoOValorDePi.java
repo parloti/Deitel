@@ -14,24 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 package deitel.cap05;
 
 /**
  *
  * @author Alex
  */
-public class Ex_05_18_ProgramaDeJurosCompostosModificado {
-
+public class Ex_05_20_CalculandoOValorDePi {
 	public static void main(String args[]) {
-		int amount;
-		int principal = 100000;
-		double rate = 0.05;
-
-		System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-		for (int year = 1; year <= 10; year++) {
-			amount =(int) ( principal * Math.pow(1 + rate, year));
-			System.out.printf("%4d%,20d.%02d%n", year, amount/100,amount%100);
+		double pi=0;
+		boolean hasFiveDigitePrecison=false;
+		int loopsUntilFiveDigitePrecison=0;
+		for(int i=0;i<200000;i++){
+			pi+=Math.pow(-1,i)*4/(2*i+1);
+			if((int)(pi*100000)==314159&&!hasFiveDigitePrecison){
+				hasFiveDigitePrecison=true;
+				loopsUntilFiveDigitePrecison=i+1;
+			}
 		}
+		
+		System.out.println(pi);
+		System.out.printf("Loops until five digite of precision: %d.%n",loopsUntilFiveDigitePrecison);
 	}
 }

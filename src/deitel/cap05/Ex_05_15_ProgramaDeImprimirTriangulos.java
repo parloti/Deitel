@@ -37,6 +37,7 @@ public class Ex_05_15_ProgramaDeImprimirTriangulos {
 				}
 				System.out.println();
 			}
+			System.out.println();
 		}
 	}
 }

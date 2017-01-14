@@ -20,18 +20,23 @@ package deitel.cap05;
  *
  * @author Alex
  */
-public class Ex_05_18_ProgramaDeJurosCompostosModificado {
+public class Ex_05_19_ {
 
 	public static void main(String args[]) {
-		int amount;
-		int principal = 100000;
-		double rate = 0.05;
+		int i = 1, j = 2, k = 3, m = 2;
+		System.out.println(i == 1);
+		//true
+		System.out.println(j == 3);
+		//false
+		System.out.println((i > 1) && (j < 4));
+		//false
+		System.out.println((m <= 99) & (k < m));
+		//false
+		System.out.println((j < i) || (k == m));
+		//false
+		System.out.println((k + m < j) | (3 - j >= k));
+		//false
+		System.out.println(!(k > m));
 
-		System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-		for (int year = 1; year <= 10; year++) {
-			amount =(int) ( principal * Math.pow(1 + rate, year));
-			System.out.printf("%4d%,20d.%02d%n", year, amount/100,amount%100);
-		}
 	}
 }

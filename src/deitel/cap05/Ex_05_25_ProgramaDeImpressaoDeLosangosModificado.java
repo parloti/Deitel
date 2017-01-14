@@ -16,22 +16,31 @@
  */
 package deitel.cap05;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Alex
  */
-public class Ex_05_18_ProgramaDeJurosCompostosModificado {
+public class Ex_05_25_ProgramaDeImpressaoDeLosangosModificado {
 
 	public static void main(String args[]) {
-		int amount;
-		int principal = 100000;
-		double rate = 0.05;
-
-		System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-		for (int year = 1; year <= 10; year++) {
-			amount =(int) ( principal * Math.pow(1 + rate, year));
-			System.out.printf("%4d%,20d.%02d%n", year, amount/100,amount%100);
+		Scanner input = new Scanner(System.in);
+		int numeroDeLinhas;
+		System.out.println("Informe o número de linhas do losango.");
+		numeroDeLinhas = input.nextInt();
+		for (int l = 0; l < numeroDeLinhas; l++) {
+			for (int c = 0; c < numeroDeLinhas; c++) {
+				if (l >= numeroDeLinhas / 2 - c
+						&& l >= c - numeroDeLinhas / 2
+						&& l <= c + numeroDeLinhas / 2
+						&& l <= numeroDeLinhas - 1 + numeroDeLinhas / 2 - c) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
 		}
 	}
 }

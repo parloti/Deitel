@@ -20,18 +20,18 @@ package deitel.cap05;
  *
  * @author Alex
  */
-public class Ex_05_18_ProgramaDeJurosCompostosModificado {
+public class Ex_05_21_TriplosDePitagoras {
 
 	public static void main(String args[]) {
-		int amount;
-		int principal = 100000;
-		double rate = 0.05;
-
-		System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-		for (int year = 1; year <= 10; year++) {
-			amount =(int) ( principal * Math.pow(1 + rate, year));
-			System.out.printf("%4d%,20d.%02d%n", year, amount/100,amount%100);
+		System.out.printf("%s%20s%20s%n", "Hypotenuse", "Side1", "Side2");
+		for (int i = 1; i <= 500; i++) {
+			for (int j = 1; j <= 500; j++) {
+				for (int k = j; k <= 500; k++) {
+					if (i * i == j * j + k * k) {
+						System.out.printf("%d%20d%20d%n", i, j, k);
+					}
+				}
+			}
 		}
 	}
 }
