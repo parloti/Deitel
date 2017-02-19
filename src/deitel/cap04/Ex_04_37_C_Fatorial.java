@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Ex_04_37_C_Fatorial {
 
 	public static void main(String args[]) {
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Informe o expoente.");
-		int expoente = keyboard.nextInt();
+		int expoente = input.nextInt();
 		System.out.println("Informe o numero de termos a calcular.");
-		int termos = keyboard.nextInt();
+		int termos = input.nextInt();
+		input.close();
 		double e = 0;
 		for (int i = 0; i < termos; i++) {
 			e += Math.pow(expoente,i)/Fatorial(i);

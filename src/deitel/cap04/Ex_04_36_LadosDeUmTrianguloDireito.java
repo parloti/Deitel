@@ -12,14 +12,15 @@ public class Ex_04_36_LadosDeUmTrianguloDireito {
 		c^2 = b^2 + a^2
 		 */
 		double ladoA, ladoB, ladoC;
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		System.out.println("Insira o primeiro valor.");
-		ladoA = keyboard.nextDouble();
+		ladoA = input.nextDouble();
 		System.out.println("Insira o segundo valor.");
-		ladoB = keyboard.nextDouble();
+		ladoB = input.nextDouble();
 		System.out.println("Insira o terceiro valor.");
-		ladoC = keyboard.nextDouble();
+		ladoC = input.nextDouble();
+		input.close();
 
 		if (Math.pow(ladoA, 2) == Math.pow(ladoB, 2) + Math.pow(ladoC, 2)
 				|| Math.pow(ladoB, 2) == Math.pow(ladoA, 2) + Math.pow(ladoC, 2)

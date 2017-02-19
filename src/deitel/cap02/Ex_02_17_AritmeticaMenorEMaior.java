@@ -13,7 +13,8 @@ public class Ex_02_17_AritmeticaMenorEMaior {
 		number2 = input.nextInt();
 		System.out.print("Insira o terceiro inteiro: ");
 		number3 = input.nextInt();
-
+		input.close();
+		
 		sum = number1 + number2 + number3;
 		average = sum / 3;
 		product = number1 * number2 * number3;

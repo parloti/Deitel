@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class Ex_04_38_ImpondoPrivacidadeComCriptografia_Decriptografia {
 
 	public static void main(String args[]) {
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Informe o inteiro de quatro digitos a ser decriptografado.");
-		int inteiro = keyboard.nextInt();
+		int inteiro = input.nextInt();
+		input.close();
 		int digito, subtracao, completo;
 		int decriptografado = 0;
 		int valorDoDigito = 0;

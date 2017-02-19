@@ -16,6 +16,8 @@ public class Ex_03_16_HeartRatesTest {
 		int mes = input.nextInt();
 		System.out.println("Digite o ano de nascimento:");
 		int ano = input.nextInt();
+		input.close();
+		
 		Ex_03_16_HeartRates heartRates
 				= new Ex_03_16_HeartRates(nome, sobrenome, new Ex_03_15_Date(dia, mes, ano));
 		System.out.printf("%s %s ", heartRates.getNome(), heartRates.getSobrenome());

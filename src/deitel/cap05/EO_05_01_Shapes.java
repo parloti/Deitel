@@ -25,11 +25,15 @@ import javax.swing.JPanel;
  */
 public class EO_05_01_Shapes extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		int xCantoSuperiorEsquerdo, yCantoSuperiorEsquerdo, altura, largura;
-
+		
 		for (int i = 1; i < 13; i++) {
 			g.drawOval(140 - i * 20 / 2, 150 - i * 20 / 2, 20 * i, 20 * i);
 		}

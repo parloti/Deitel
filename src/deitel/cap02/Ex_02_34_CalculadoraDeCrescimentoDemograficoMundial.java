@@ -31,7 +31,7 @@ public class Ex_02_34_CalculadoraDeCrescimentoDemograficoMundial {
 		populacao = input.nextInt();
 		System.out.print("Insira a Taxa De Crescimento Demográfica Mundial Anual (%): ");
 		taxa = input.nextInt();
-
+		input.close();
 		System.out.println();
 		System.out.printf("População Mundial em Um Ano: %d.%n",
 				populacao * (taxa + 100) / 100

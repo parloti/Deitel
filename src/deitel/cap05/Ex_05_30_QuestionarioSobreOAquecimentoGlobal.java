@@ -78,6 +78,8 @@ public class Ex_05_30_QuestionarioSobreOAquecimentoGlobal {
 		System.out.println("3) 50 metros");
 		System.out.println("4) 65 metros");
 		resp = input.nextInt();
+		input.close();
+		
 		System.out.println();
 		if (resp == 4) {
 			acertos++;

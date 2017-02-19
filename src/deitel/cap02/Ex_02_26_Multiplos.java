@@ -11,6 +11,7 @@ public class Ex_02_26_Multiplos {
 		inteiro1 = input.nextInt();
 		System.out.print("Insira o segundo inteiro: ");
 		inteiro2 = input.nextInt();
+		input.close();
 		resto = inteiro1 % inteiro2;
 		if (resto == 0) {
 			System.out.printf("%d é múltiplo de %d.%n", inteiro1, inteiro2);

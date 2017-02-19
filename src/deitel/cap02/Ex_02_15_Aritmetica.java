@@ -11,6 +11,7 @@ public class Ex_02_15_Aritmetica {
 		number1 = input.nextInt();
 		System.out.print("Insert the second number: ");
 		number2 = input.nextInt();
+		input.close();
 		sum = number1 + number2;
 		product = number1 * number2;
 		difference = number1 - number2;

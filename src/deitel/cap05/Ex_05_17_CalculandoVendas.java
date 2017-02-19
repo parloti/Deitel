@@ -38,6 +38,8 @@ public class Ex_05_17_CalculandoVendas {
 			if (produto >= 1 && produto <= 5) {
 				System.out.printf("%nInsira a quantidade vendida do produto %d.%n", produto);
 				quantidade = input.nextInt();
+				input.close();
+				
 				switch (produto) {
 					case 1:
 						valor = 2.98;

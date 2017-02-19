@@ -25,6 +25,10 @@ import javax.swing.JPanel;
  */
 public class EO_05_02_ProgramaDeImpressaoDeGraficoDeBarras extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int numero;
 	private final int numero1;
 	private final int numero2;

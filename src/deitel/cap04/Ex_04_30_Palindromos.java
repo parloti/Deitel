@@ -12,13 +12,14 @@ public class Ex_04_30_Palindromos {
 	public static void main(String[] args) {
 		String inteiro;
 		System.out.println("Informe um inteiro de cinco digitos.");
-		Scanner teclado = new Scanner(System.in);
-		inteiro = teclado.next();
+		Scanner input = new Scanner(System.in);
+		inteiro = input.next();
 		while (inteiro.length() != 5) {
 			System.out.println("O numero informado não tem cinco digitos.");
 			System.out.println("Informe um inteiro de cinco digitos.");
-			inteiro = teclado.next();
+			inteiro = input.next();
 		}
+		input.close();
 		if (inteiro.charAt(0) == inteiro.charAt(4)
 				&& inteiro.charAt(1) == inteiro.charAt(3)) {
 			System.out.printf("%s é um palindromo.%n", inteiro);

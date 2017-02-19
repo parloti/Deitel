@@ -11,6 +11,8 @@ public class Ex_02_33_CalculadoraDeIndiceDeMassaCorporal {
 		peso = input.nextInt();
 		System.out.print("Insira a sua altura em centimetros: ");
 		altura = input.nextInt();
+		input.close();
+		
 		imc = 100 * 100 * peso / altura / altura;
 		
 		System.out.println();

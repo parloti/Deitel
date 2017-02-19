@@ -10,13 +10,15 @@ import java.util.Scanner;
 public class Ex_04_31_ImprimindoOEquivalenteDecimalDeUmNumeroBinario {
 
 	public static void main(String args[]) {
-		Scanner keyboard;
-		keyboard = new Scanner(System.in);
+		Scanner input;
+		input = new Scanner(System.in);
 
 		int binarioInicial, binario, decimal, contador, resto;
 
 		System.out.printf("Insira um n%cmero bin%crio inteiro.%n", 250, 225);
-		binarioInicial = keyboard.nextInt();
+		binarioInicial = input.nextInt();
+		input.close();
+		
 		binario = binarioInicial;
 		decimal = 0;
 		contador = 0;

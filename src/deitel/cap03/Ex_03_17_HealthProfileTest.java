@@ -32,6 +32,7 @@ public class Ex_03_17_HealthProfileTest {
 		peso = input.nextInt();
 		System.out.println("Digite a altura:");
 		altura = input.nextInt();
+		input.close();
 		
 		Ex_03_17_HealthProfile healthProfile = new Ex_03_17_HealthProfile(nome, sobrenome, sexo,altura,peso,new Ex_03_15_Date(dia, mes, ano));
 		

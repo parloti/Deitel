@@ -5,6 +5,11 @@ import javax.swing.JPanel;
 
 public class EO_04_01_B_DrawPanel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);

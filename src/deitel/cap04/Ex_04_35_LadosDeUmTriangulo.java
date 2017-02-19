@@ -12,14 +12,15 @@ public class Ex_04_35_LadosDeUmTriangulo {
 		| a - b | < c < a + b
 		 */
 		double ladoA, ladoB, ladoC;
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		System.out.println("Insira o primeiro valor.");
-		ladoA = keyboard.nextDouble();
+		ladoA = input.nextDouble();
 		System.out.println("Insira o segundo valor.");
-		ladoB = keyboard.nextDouble();
+		ladoB = input.nextDouble();
 		System.out.println("Insira o terceiro valor.");
-		ladoC = keyboard.nextDouble();
+		ladoC = input.nextDouble();
+		input.close();
 
 		if (Math.abs(ladoB - ladoC) < ladoA && ladoA < ladoB + ladoC
 				&& Math.abs(ladoA - ladoC) < ladoB && ladoB < ladoA + ladoC

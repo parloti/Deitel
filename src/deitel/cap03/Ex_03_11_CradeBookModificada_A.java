@@ -23,6 +23,7 @@ package deitel.cap03;
 public class Ex_03_11_CradeBookModificada_A {
 
 	private String courseName;
+	@SuppressWarnings("unused")
 	private String professorName;
 
 	public Ex_03_11_CradeBookModificada_A(String course) {

@@ -20,7 +20,7 @@ public class Ex_04_18_C_CalculadorDeLimiteDeCredito {
 		input.close();
 		saldoFinal = saldoInicial - debitos + creditos;
 		if (saldoFinal < limite) {
-			System.out.println("Limite de credito excedido.");
+			System.out.println("Limite de credito excedido para a conta "+numeroConta);
 		}
 	}
 

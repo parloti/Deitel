@@ -31,7 +31,8 @@ public class Ex_05_11_LocalizeOMenorValor {
 
 		System.out.println("Quantos inteiro serão inseridos?");
 		int numeroDeInt = input.nextInt();
-
+		input.close();
+		
 		for (int count = 0; count < numeroDeInt; count++) {
 			System.out.println("Insira o próximo inteiro.");
 			inteiro = input.nextInt();

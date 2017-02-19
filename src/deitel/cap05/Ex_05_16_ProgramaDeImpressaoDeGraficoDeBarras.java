@@ -38,7 +38,8 @@ public class Ex_05_16_ProgramaDeImpressaoDeGraficoDeBarras {
 		numero4 = input.nextInt();
 		System.out.println("Insira o quinto inteiro.");
 		numero5 = input.nextInt();
-
+		input.close();
+		
 		for (int i = 1; i <= 5; i++) {
 			switch (i) {
 				case 1:

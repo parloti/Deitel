@@ -9,6 +9,7 @@ public class Ex_02_28_DiametroCircunferenciaEAreaDeUmCirculo {
 		int raio;
 		System.out.print("Insira o raio do círculo: ");
 		raio = input.nextInt();
+		input.close();
 		System.out.printf("O diâmetro do círculo %d.%n", 2 * raio);
 		System.out.printf("A circunferência do círculo %f.%n", 2 * Math.PI * raio);
 		System.out.printf("A área do círculo %f.%n", Math.PI * raio * raio);

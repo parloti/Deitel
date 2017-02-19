@@ -29,6 +29,8 @@ public class Ex_05_25_ProgramaDeImpressaoDeLosangosModificado {
 		int numeroDeLinhas;
 		System.out.println("Informe o número de linhas do losango.");
 		numeroDeLinhas = input.nextInt();
+		input.close();
+		
 		for (int l = 0; l < numeroDeLinhas; l++) {
 			for (int c = 0; c < numeroDeLinhas; c++) {
 				if (l >= numeroDeLinhas / 2 - c

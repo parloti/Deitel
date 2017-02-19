@@ -11,8 +11,10 @@ public class Ex_04_29_QuadradoDeAsteriscos {
 
 	public static void main(String[] args) {
 		System.out.println("Informa o tamanho do lado do quadrado (entre 1 a 20).");
-		Scanner teclado = new Scanner(System.in);
-		int lado = teclado.nextInt();
+		Scanner input = new Scanner(System.in);
+		int lado = input.nextInt();
+		input.close();
+		
 		for (int i = 0; i < lado; i++) {
 			System.out.print("*");
 		}

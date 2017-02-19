@@ -17,7 +17,8 @@ public class Ex_02_24_MaioresEMenoresInteiros {
 		inteiro4 = input.nextInt();
 		System.out.print("Insira o quinto inteiro: ");
 		inteiro5 = input.nextInt();
-
+		input.close();
+		
 		if (inteiro1 > inteiro2) {
 			if (inteiro1 > inteiro3) {
 				if (inteiro1 > inteiro4) {

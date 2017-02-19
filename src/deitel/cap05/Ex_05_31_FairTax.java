@@ -48,6 +48,7 @@ public class Ex_05_31_FairTax {
 		
 		System.out.print("Informe o valor das despesas com férias: ");
 		despesasTotal += input.nextInt();
+		input.close();
 		
 		System.out.printf("A FairTax estimada que pagaria é : %,.2f",despesasTotal*23/77);
 	}

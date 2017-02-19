@@ -17,6 +17,8 @@ public class Ex_02_32_ValoresNegativosPositivosEZero {
 		inteiro4 = input.nextInt();
 		System.out.print("Insira o quinto inteiro: ");
 		inteiro5 = input.nextInt();
+		input.close();
+		
 		if (inteiro1 > 0) {
 			positivos = positivos + 1;
 		}

@@ -7,9 +7,10 @@ public class Ex_04_38_ImpondoPrivacidadeComCriptografia_Criptografia {
 
 	public static void main(String args[]) {
 		//ler inteiro de 4 digitos
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Informe o inteiro de quatro digitos a ser criptografado.");
-		int inteiro = keyboard.nextInt();
+		int inteiro = input.nextInt();
+		input.close();
 		int digito, adicao,resto;
 		int criptografado=0;
 		int valorDoDigito=0;

@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Ex_04_37_B_Fatorial {
 
 	public static void main(String args[]) {
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Informe o numero de termos a calcular.");
-		int termos = keyboard.nextInt();
+		int termos = input.nextInt();
+		input.close();
 		double e = 0;
 		for (int i = 0; i < termos; i++) {
 			e += 1.0/Fatorial(i);

@@ -37,6 +37,7 @@ public class Ex_02_35_CalculadoraDeEconomiaDaFaixaSolidaria {
 		estacionamento = input.nextInt();
 		System.out.print("Insira o pedágio por dia: ");
 		pedagio = input.nextInt();
+		input.close();
 		despesasComCombustivel = precoGalao * milhasTotais / rendimentoGalao;
 
 		System.out.println();

@@ -9,6 +9,7 @@ public class Ex_02_30_SeparandoOsDigitosEmUmInteiro {
 		int number;
 		System.out.print("Insira um inteiro com 5 dígitos: ");
 		number = input.nextInt();
+		input.close();
 		System.out.printf("%d   ", number % 100000 / 10000);
 		System.out.printf("%d   ", number % 10000 / 1000);
 		System.out.printf("%d   ", number % 1000 / 100);
