@@ -11,11 +11,11 @@ public class Ex_06_21_SeparandoDigitos {
 		displayDigits(inteiro);
 	}
 
-	private static int parteInteiro(int a, int b) {
+	public static int parteInteiro(int a, int b) {
 		return (int) (a / b);
 	}
 
-	private static int restoInteiro(int a, int b) {
+	public static int restoInteiro(int a, int b) {
 		return a % b;
 	}
 

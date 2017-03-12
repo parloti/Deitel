@@ -3,9 +3,10 @@ package deitel.cap06;
 public class Ex_06_24_NumerosPerfeitos {
 
 	public static void main(String[] args) {
+		System.out.print("Perfeitos: ");
 		for (int i = 1; i < 100000; i++) {
 			if (isPerfect(i)) {
-				System.out.println("Perfeito: "+i);
+				System.out.print(i+", ");
 			}
 		}
 	}
