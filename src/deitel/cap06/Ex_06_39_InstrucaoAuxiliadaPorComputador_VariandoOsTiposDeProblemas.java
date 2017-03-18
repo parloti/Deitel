@@ -7,7 +7,6 @@ public class Ex_06_39_InstrucaoAuxiliadaPorComputador_VariandoOsTiposDeProblemas
 	private static final Scanner input = new Scanner(System.in);
 	private static final Random randomNumbers = new Random();
 	private int successesCount = 0;
-	private int errorsCount = 0;
 	private int aswerCount = 0;
 	private int dificuldade;
 	private int operation;
@@ -15,7 +14,6 @@ public class Ex_06_39_InstrucaoAuxiliadaPorComputador_VariandoOsTiposDeProblemas
 	private static final int ADDITION = 1;
 	private static final int SUBTRACTION = 2;
 	private static final int MULTIPLICATION = 3;
-	private static final int DIVISION = 4;
 	private static final int ALL = 5;
 	
 	public void dificuldade() {
@@ -89,7 +87,6 @@ public class Ex_06_39_InstrucaoAuxiliadaPorComputador_VariandoOsTiposDeProblemas
 				}
 			} else {
 				System.out.println(msg(false));
-				errorsCount++;
 			}
 		} while (userAnswer != correctAnswer);
 	}
