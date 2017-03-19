@@ -6,9 +6,8 @@ public class Ex_07_15_InitArray {
 		int[] array;
 		int ARRAY_SIZE;
 		
-		if (args[0] != "") {
+		if (args.length > 0) {
 			ARRAY_SIZE = Integer.parseInt(args[0]);
-			;
 		} else {
 			ARRAY_SIZE = 10;
 		}
